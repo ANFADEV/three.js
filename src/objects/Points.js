@@ -15,6 +15,8 @@ class Points extends Object3D {
 
 	constructor( geometry = new BufferGeometry(), material = new PointsMaterial() ) {
 
+		Object.setPrototypeOf( this, Object3D );
+
 		super();
 
 		this.isPoints = true;

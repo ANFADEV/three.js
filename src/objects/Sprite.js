@@ -30,6 +30,8 @@ class Sprite extends Object3D {
 
 	constructor( material ) {
 
+		Object.setPrototypeOf( this, Object3D );
+
 		super();
 
 		this.isSprite = true;

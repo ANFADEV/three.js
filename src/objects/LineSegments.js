@@ -9,6 +9,8 @@ class LineSegments extends Line {
 
 	constructor( geometry, material ) {
 
+		Object.setPrototypeOf( this, Line );
+
 		super( geometry, material );
 
 		this.isLineSegments = true;

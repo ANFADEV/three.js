@@ -8,6 +8,8 @@ class LOD extends Object3D {
 
 	constructor() {
 
+		Object.setPrototypeOf( this, Object3D );
+
 		super();
 
 		this._currentLevel = 0;

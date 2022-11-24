@@ -15,6 +15,8 @@ class SkinnedMesh extends Mesh {
 
 	constructor( geometry, material ) {
 
+		Object.setPrototypeOf( this, Mesh );
+
 		super( geometry, material );
 
 		this.isSkinnedMesh = true;

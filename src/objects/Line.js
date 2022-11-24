@@ -17,6 +17,8 @@ class Line extends Object3D {
 
 	constructor( geometry = new BufferGeometry(), material = new LineBasicMaterial() ) {
 
+		Object.setPrototypeOf( this, Object3D );
+
 		super();
 
 		this.isLine = true;

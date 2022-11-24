@@ -4,6 +4,8 @@ class Bone extends Object3D {
 
 	constructor() {
 
+		Object.setPrototypeOf( this, Object3D );
+
 		super();
 
 		this.isBone = true;

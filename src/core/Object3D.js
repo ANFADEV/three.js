@@ -29,6 +29,8 @@ class Object3D extends EventDispatcher {
 
 	constructor() {
 
+		Object.setPrototypeOf( this, EventDispatcher );
+
 		super();
 
 		this.isObject3D = true;

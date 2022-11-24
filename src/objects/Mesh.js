@@ -36,6 +36,8 @@ class Mesh extends Object3D {
 
 	constructor( geometry = new BufferGeometry(), material = new MeshBasicMaterial() ) {
 
+		Object.setPrototypeOf( this, Object3D );
+
 		super();
 
 		this.isMesh = true;

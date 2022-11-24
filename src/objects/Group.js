@@ -4,6 +4,8 @@ class Group extends Object3D {
 
 	constructor() {
 
+		Object.setPrototypeOf( this, Object3D );
+
 		super();
 
 		this.isGroup = true;

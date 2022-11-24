@@ -14,6 +14,8 @@ class InstancedMesh extends Mesh {
 
 	constructor( geometry, material, count ) {
 
+		Object.setPrototypeOf( this, Mesh );
+
 		super( geometry, material );
 
 		this.isInstancedMesh = true;
